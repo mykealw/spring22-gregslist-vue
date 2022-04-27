@@ -1,15 +1,7 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-2">
-        <button
-          class="btn btn-info"
-          data-bs-target="#create-car-modal"
-          data-bs-toggle="modal"
-        >
-          Create
-        </button>
-      </div>
+      <div class="col-2"></div>
     </div>
     <div class="row p-2">
       <Car v-for="c in cars" :key="c.id" :car="c" />

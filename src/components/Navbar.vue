@@ -5,6 +5,7 @@
         <h2>GregsList</h2>
       </div>
     </router-link>
+
     <button
       class="navbar-toggler"
       type="button"
