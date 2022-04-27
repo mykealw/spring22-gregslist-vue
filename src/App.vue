@@ -20,10 +20,21 @@
         >
           Create
         </button>
+        <button
+          class="btn btn-success square-left"
+          data-bs-target="#create-house-modal"
+          data-bs-toggle="modal"
+          v-if="user.isAuthenticated"
+        >
+          Create HOUSE
+        </button>
       </div>
       <!-- NOTE user.isAuthenticated is making sure the user is logged in - hiding the button if they are not logged in -->
     </div>
     <router-view />
+
+    <Modal id="create-house-modal" />
+    <Modal id="create-car-modal" />
   </main>
 
   <NavOffCanvas id="nav" />
